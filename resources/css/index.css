@@ -12,4 +12,13 @@
 
 #banner {
     background-color: pink;
+    height: 150px;
+    vertical-align: middle;
+    text-shadow: 1px 1px 3px darkmagenta;
+}
+
+#banner h1 {
+    display: inline-grid;
+    height: 100%;
+    margin: 0;
 }
