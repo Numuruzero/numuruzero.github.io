@@ -1,0 +1,78 @@
+* {
+    text-align: center;
+    background-color: #008081;
+}
+
+/* #page-container {
+    position: relative;
+    min-height: 100vh;
+} */
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+    background-color: #010080;
+    margin: 50px auto;
+    padding: 25px 0;
+    position: sticky;
+    left: 0;
+    right: 0;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    background-color: #010080;
+    color: white;
+}
+
+caption {
+    margin-bottom: 15px;
+}
+
+footer {
+    background-color: #010080;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+}
+
+footer p {
+    background-color: #010080;
+    color: white;
+}
+
+.lt, .gt {
+    color: red;
+    background-color: inherit;
+}
+
+.semtable {
+    display: inline-block;
+}
+
+#semantic thead th {
+    background-color: #64b9d3;
+    border: 2px solid #444428;
+}
+
+tbody th {
+    background-color: #c0c0c0;
+    border: 2px solid black;
+}
+
+tbody td {
+    background-color: black;
+    color: #00ff00;
+    border: 2px solid black;
+    padding: 10px 5px;
+}
+
+tbody td:last-child {
+    color: #bbbdbc;
+    background-color: #808080;
+}
