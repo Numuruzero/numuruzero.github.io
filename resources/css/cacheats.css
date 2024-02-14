@@ -20,6 +20,7 @@ nav {
     margin: 50px auto;
     padding: 25px 0;
     position: sticky;
+    display: flex;
     left: 0;
     right: 0;
 }
@@ -27,11 +28,13 @@ nav {
 nav ul {
     list-style-type: none;
     background-color: inherit;
+    margin: auto;
 }
 
 nav li {
     display: inline-block;
     background-color: inherit;
+    margin: auto;
 }
 
 nav a {
@@ -42,9 +45,11 @@ nav a {
 }
 nav img {
     width: 20px;
-    display: inline-flex;
+    display: inline-block;
+    position: absolute;
     right: 0;
-    margin-left: 50%;
+    align-self: center;
+    margin-right: 10px;
 }
 
 caption {
