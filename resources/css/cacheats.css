@@ -1,6 +1,7 @@
 * {
     text-align: center;
     background-color: #008081;
+    font-family: sans-serif;
 }
 
 /* #page-container {
@@ -10,6 +11,7 @@
 
 header h1 {
     text-align: center;
+    font-family: 'Workbench', sans-serif;
 }
 
 nav {
@@ -22,11 +24,27 @@ nav {
     right: 0;
 }
 
+nav ul {
+    list-style-type: none;
+    background-color: inherit;
+}
+
+nav li {
+    display: inline-block;
+    background-color: inherit;
+}
+
 nav a {
     margin: 0 15px;
     text-decoration: none;
     background-color: #010080;
     color: white;
+}
+nav img {
+    width: 20px;
+    display: inline-flex;
+    right: 0;
+    margin-left: 50%;
 }
 
 caption {
@@ -58,6 +76,8 @@ footer p {
 #semantic thead th {
     background-color: #64b9d3;
     border: 2px solid #444428;
+    /* border-top: 2px solid; */
+    /* border-image: linear-gradient(to left, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5; */
 }
 
 tbody th {
@@ -70,9 +90,11 @@ tbody td {
     color: #00ff00;
     border: 2px solid black;
     padding: 10px 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 tbody td:last-child {
     color: #bbbdbc;
     background-color: #808080;
+    font-family: sans-serif;
 }
