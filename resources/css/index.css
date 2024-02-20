@@ -5,6 +5,14 @@
     width: 100%;
 }
 
+nav {
+    align-content: center;
+}
+
+nav li {
+    display: inline;
+}
+
 .dance {
     width: 500px;
     height: 500px;
