@@ -12,126 +12,141 @@
       rel="stylesheet"
     />
   </head>
-  <body id="page-container">
-    <header>
-      <h1>The Big Cheater Website</h1>
-    </header>
-    <nav id="banner">
-      <ul>
-        <li><a href="#semantic">Semantic HTML Tags</a></li>
-        <li><a href="#">Other things, theoretically</a></li>
-      </ul>
-      <a href="/index.html"><img src="./resources/images/smallx.png" /></a>
-    </nav>
-    <section class="introduction"></section>
-    <article id="semantic">
-      <table class="semtable">
-        <caption>
-          Semantic tags taught by CodeAcademy, and their uses
-        </caption>
-        <thead>
-          <tr>
-            <th scope="col">Name</th>
-            <th scope="col">Example in Code</th>
-            <th scope="col">Usage</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">Header</th>
-            <td>
-              <span class="lt">&lt;</span>header<span class="gt">&gt;</span
-              >Observe my amazing banner!<span class="lt">&lt;</span
-              >/header<span class="gt">&gt;</span>
-            </td>
-            <td>Top header content such as logos or banners</td>
-          </tr>
-          <tr>
-            <th scope="row">Nav</th>
-            <td>
-              <span class="lt">&lt;</span>nav<span class="gt">&gt;</span>Live
-              Links Here!<span class="lt">&lt;</span>/nav<span class="gt"
-                >&gt;</span
-              >
-            </td>
-            <td>
-              Navigation bars and links, generally (but not always) up top
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Section</th>
-            <td>
-              <span class="lt">&lt;</span>section<span class="gt">&gt;</span>As
-              you can see this is distinct from the previous section<span
-                class="lt"
-                >&lt;</span
-              >/section<span class="gt">&gt;</span>
-            </td>
-            <td>
-              Defines a section of a webpage, much like
-              <span class="lt">&lt;</span>div<span class="gt">&gt;</span>
-            </td>
-          </tr>
-          <tr>
-            <th scope="row">Article</th>
-            <td>
-              <span class="lt">&lt;</span>article<span class="gt">&gt;</span>An
-              Exploration of Primate Behavior Upon Visual Stimulation: in this
-              essay, do monkey do as monkey see?<span class="lt">&lt;</span
-              >/article<span class="gt">&gt;</span>
-            </td>
-            <td>Denotes specific content that makes sense on its own</td>
-          </tr>
-          <tr>
-            <th scope="row">Figure</th>
-            <td>
-              <span class="lt">&lt;</span>figure<span class="gt">&gt;</span
-              ><span class="lt">&lt;</span>img
-              src="https://m.media-amazon.com/images/I/517r-1LZfgL.jpg" /<span
-                class="gt"
-                >&gt;</span
-              ><span class="lt">&lt;</span>/figure<span class="gt">&gt;</span>
-            </td>
-            <td>Content such as images or media</td>
-          </tr>
-          <tr>
-            <th scope="row">Figcaption</th>
-            <td>
-              <span class="lt">&lt;</span>figure<span class="gt">&gt;</span
-              ><span class="lt">&lt;</span>figcaption<span class="gt">&gt;</span
-              >A cat making it through hardships<span class="lt">&lt;</span
-              >/figcaption<span class="gt">&gt;</span
-              ><span class="lt">&lt;</span>/figure<span class="gt">&gt;</span>
-            </td>
-            <td>Provides a caption directly adjacent to its parent figure</td>
-          </tr>
-          <tr>
-            <th scope="row">Aside</th>
-            <td>
-              <span class="lt">&lt;</span>aside<span class="gt">&gt;</span
-              >Incidentally, spider monkeys were excluded from testing because
-              all our researchers have arachnaphobia<span class="lt">&lt;</span
-              >/aside<span class="gt">&gt;</span>
-            </td>
-            <td>Content meant to be supplement a main article or section</td>
-          </tr>
-          <tr>
-            <th scope="row">Footer</th>
-            <td>
-              <span class="lt">&lt;</span>footer<span class="gt">&gt;</span
-              >Copyright Solid Snake Inc. 20XX<span class="lt">&lt;</span
-              >/footer<span class="gt">&gt;</span>
-            </td>
-            <td>
-              The bottom of a webpage, usually authorship and copyright
-              information
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </article>
-    <footer>
-      <p>Copyright me, Mr. Bombastic</p>
-    </footer>
+  <body>
+    <div id="page-container">
+      <div id="content-wrap">
+        <header>
+          <h1>The Big Cheater Website</h1>
+        </header>
+        <nav id="banner">
+          <ul>
+            <li><a href="#semantic">Semantic HTML Tags</a></li>
+            <li><a href="#">Other things, theoretically</a></li>
+          </ul>
+          <a href="/index.html"><img src="./resources/images/smallx.png" /></a>
+        </nav>
+        <section class="introduction"></section>
+        <article id="semantic">
+          <table class="semtable">
+            <caption>
+              Semantic tags taught by CodeAcademy, and their uses
+            </caption>
+            <thead>
+              <tr>
+                <th scope="col">Name</th>
+                <th scope="col">Example in Code</th>
+                <th scope="col">Usage</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Header</th>
+                <td>
+                  <span class="lt">&lt;</span>header<span class="gt">&gt;</span
+                  >Observe my amazing banner!<span class="lt">&lt;</span
+                  >/header<span class="gt">&gt;</span>
+                </td>
+                <td>Top header content such as logos or banners</td>
+              </tr>
+              <tr>
+                <th scope="row">Nav</th>
+                <td>
+                  <span class="lt">&lt;</span>nav<span class="gt">&gt;</span
+                  >Live Links Here!<span class="lt">&lt;</span>/nav<span
+                    class="gt"
+                    >&gt;</span
+                  >
+                </td>
+                <td>
+                  Navigation bars and links, generally (but not always) up top
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Section</th>
+                <td>
+                  <span class="lt">&lt;</span>section<span class="gt">&gt;</span
+                  >As you can see this is distinct from the previous
+                  section<span class="lt">&lt;</span>/section<span class="gt"
+                    >&gt;</span
+                  >
+                </td>
+                <td>
+                  Defines a section of a webpage, much like
+                  <span class="lt">&lt;</span>div<span class="gt">&gt;</span>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Article</th>
+                <td>
+                  <span class="lt">&lt;</span>article<span class="gt">&gt;</span
+                  >An Exploration of Primate Behavior Upon Visual Stimulation:
+                  in this essay, do monkey do as monkey see?<span class="lt"
+                    >&lt;</span
+                  >/article<span class="gt">&gt;</span>
+                </td>
+                <td>Denotes specific content that makes sense on its own</td>
+              </tr>
+              <tr>
+                <th scope="row">Figure</th>
+                <td>
+                  <span class="lt">&lt;</span>figure<span class="gt">&gt;</span
+                  ><span class="lt">&lt;</span>img
+                  src="https://m.media-amazon.com/images/I/517r-1LZfgL.jpg"
+                  /<span class="gt">&gt;</span
+                  ><span class="lt">&lt;</span>/figure<span class="gt"
+                    >&gt;</span
+                  >
+                </td>
+                <td>Content such as images or media</td>
+              </tr>
+              <tr>
+                <th scope="row">Figcaption</th>
+                <td>
+                  <span class="lt">&lt;</span>figure<span class="gt">&gt;</span
+                  ><span class="lt">&lt;</span>figcaption<span class="gt"
+                    >&gt;</span
+                  >A cat making it through hardships<span class="lt">&lt;</span
+                  >/figcaption<span class="gt">&gt;</span
+                  ><span class="lt">&lt;</span>/figure<span class="gt"
+                    >&gt;</span
+                  >
+                </td>
+                <td>
+                  Provides a caption directly adjacent to its parent figure
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Aside</th>
+                <td>
+                  <span class="lt">&lt;</span>aside<span class="gt">&gt;</span
+                  >Incidentally, spider monkeys were excluded from testing
+                  because all our researchers have arachnaphobia<span class="lt"
+                    >&lt;</span
+                  >/aside<span class="gt">&gt;</span>
+                </td>
+                <td>
+                  Content meant to be supplement a main article or section
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">Footer</th>
+                <td>
+                  <span class="lt">&lt;</span>footer<span class="gt">&gt;</span
+                  >Copyright Solid Snake Inc. 20XX<span class="lt">&lt;</span
+                  >/footer<span class="gt">&gt;</span>
+                </td>
+                <td>
+                  The bottom of a webpage, usually authorship and copyright
+                  information
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </article>
+      </div>
+      <footer>
+        <p>Copyright me, Mr. Bombastic</p>
+      </footer>
+    </div>
   </body>
 </html>

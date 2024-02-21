@@ -4,10 +4,14 @@
     font-family: sans-serif;
 }
 
-/* #page-container {
+#page-container {
     position: relative;
     min-height: 100vh;
-} */
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;
+}
 
 header h1 {
     text-align: center;
@@ -59,8 +63,7 @@ caption {
 footer {
     background-color: #010080;
     bottom: 0;
-    right: 0;
-    left: 0;
+    width: 100%;
     position: absolute;
 }
 
