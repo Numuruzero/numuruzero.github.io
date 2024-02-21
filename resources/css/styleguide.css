@@ -2,6 +2,7 @@ h1 {
     color: red;
 }
 
-section {
+.container {
     border: 1px solid black;
+    margin: 6vh, 0;
 }
