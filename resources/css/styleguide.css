@@ -2,7 +2,65 @@ h1 {
     color: red;
 }
 
+figcaption {
+    display: table-caption;
+    caption-side: top;
+    color: white;
+    margin-bottom: 2px;
+    margin-left: 2px;
+}
+
 .container {
     border: 1px solid black;
-    margin: 6vh, 0;
+    margin: 2rem 0;
+}
+
+.color-container {
+    display: inline-block;
+    margin: auto;
+    padding: 0;
+    width: 25vw;
+    min-width: 15rem;
+}
+
+.caption {
+    margin-bottom: 0;
+}
+
+.color {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem 0 2rem 5rem;
+    display: table;
+    border: 10px solid transparent;
+    border-image: url("../images/activewindowborder.png") 27 / 27px 27px 27px 27px / 22px 3px 3px 3px round;
+}
+
+.color p {
+    text-align: center;
+}
+
+.bgcolor {
+    background-color: #008080;
+}
+
+.titlecolor {
+    background-color: #000080;
+    color: white;
+}
+
+.windowbg {
+    background-color: #bfbfbf;
+}
+
+.inactivetitle {
+    background-color: rgb(128, 128, 128);
+}
+
+.titlefont {
+    font-family: 'Workbench', sans-serif;
+}
+
+.codefont {
+    font-family: 'Courier New', Courier, monospace;
 }
