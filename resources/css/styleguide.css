@@ -1,12 +1,21 @@
+@font-face {
+    font-family: "W95FA";
+    src: url(../fonts/w95fa.woff2) format('woff2'),
+         url(../fonts/w95fa.woff) format('woff'),
+         url(../fonts/W95FA.otf) format('opentype');
+}
+
 h1 {
     color: red;
 }
 
 figcaption {
+    font-family: "W95FA", sans-serif;
+    font-size: 14px;
     display: table-caption;
     caption-side: top;
     color: white;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
     margin-left: 2px;
 }
 
