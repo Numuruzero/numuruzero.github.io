@@ -5,23 +5,38 @@
          url(../fonts/W95FA.otf) format('opentype');
 }
 
+* {
+    background-color: #60a8a9;
+}
+
 h1 {
     color: red;
 }
 
+h2 {
+    background-color: inherit;
+}
+
 figcaption {
     font-family: "W95FA", sans-serif;
-    font-size: 14px;
+    font-size: 12px;
     display: table-caption;
     caption-side: top;
     color: white;
     margin-bottom: 3px;
-    margin-left: 2px;
+    margin-left: 5px;
+    background-color: transparent;
 }
 
 .container {
-    border: 1px solid black;
+    border: 10px solid transparent;
+    border-image: url("../images/activewindowborder.png") 27 / 27px 27px 27px 27px / 22px 3px 3px 3px round;
     margin: 2rem 0;
+    background-color: #c4c7cb;
+}
+
+.colors, .fonts, .styles {
+    background: inherit;
 }
 
 .color-container {
@@ -30,11 +45,18 @@ figcaption {
     padding: 0;
     width: 25vw;
     min-width: 15rem;
+    background-color: inherit;
 }
 
 .caption {
     margin-bottom: 0;
 }
+
+/* .titlecolor::before {
+    content: "Active title color";
+    position: relative;
+    top: -1.8rem;
+} */
 
 .color {
     width: 10rem;
@@ -46,24 +68,43 @@ figcaption {
 }
 
 .color p {
+    background-color: transparent;
+}
+
+.inactive {
+    border: 10px solid transparent;
+    border-image: url("../images/inactivewindowborder.png") 27 / 27px 27px 27px 27px / 22px 3px 3px 3px round;
+    color: #c4c7cb;
+}
+
+.color p {
     text-align: center;
 }
 
 .bgcolor {
-    background-color: #008080;
+    background-color: #61a9aa;
 }
 
 .titlecolor {
-    background-color: #000080;
+    background-color: #1d00a8;
     color: white;
 }
 
 .windowbg {
-    background-color: #bfbfbf;
+    background-color: #c4c7cb;
 }
 
 .inactivetitle {
-    background-color: rgb(128, 128, 128);
+    background-color: #878a8e;
+}
+
+.font {
+    width: 10rem;
+    height: 10rem;
+    margin: 2rem 0 2rem 5rem;
+    display: table;
+    border: 10px solid transparent;
+    border-image: url("../images/inactivewindowbordercontrols.png") 27 56 27 27 / 27px 56px 27px 27px / 22px 3px 3px 3px round;
 }
 
 .titlefont {
