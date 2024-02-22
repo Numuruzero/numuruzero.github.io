@@ -18,6 +18,7 @@ h1 {
 
 h2 {
     background-color: transparent;
+    font-family: "W95FA", 'Courier New', Courier, monospace, sans-serif;
 }
 
 h3 {
@@ -50,9 +51,10 @@ nav li {
     border-image: url("../images/activewindowborder.png") 27 / 27px 27px 27px 27px / 22px 3px 3px 3px round;
     margin: 2rem 0;
     background-color: #c4c7cb;
-    min-width: 21rem;
+    min-width: 21.2rem;
     max-width: 60rem;
     display: grid;
+    position: static;
 }
 
 .colors, .fonts, .styles {
@@ -128,19 +130,66 @@ nav li {
 
 .fonts {
     align-content: center;
-    display: flex;
+    display: grid;
     flex-wrap: wrap;
 }
 
 .font-container {
-    margin: 2rem 33%;
-    width: 32%;
-    min-width: 15rem;
+    margin: 2rem 0 2rem 0;
+    min-width: 21rem;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .font p {
     background-color: transparent;
+}
+
+.textstyles {
+    background-color: transparent;
+}
+
+.style-container {
+    margin: 2rem 0 2rem 0;
+    min-width: 21rem;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.style {
+    width: 20rem;
+    height: 10rem;
+    display: table;
+    text-align: center;
+    background-color: white;
+    border: 10px solid transparent;
+    border-image: url("../images/inactivewindowbordercontrols.png") 27 56 27 27 / 27px 56px 27px 27px / 22px 3px 3px 3px round;
+}
+
+.style h1 {
+    background-color: transparent;
+    font-family: "Workbench", 'Courier New', Courier, monospace;
+}
+
+.style ul {
+    background-color: transparent;
+}
+
+.style p {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: transparent;
+}
+
+.style li {
+    text-align: left;
+    background-color: transparent;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .bannerfont {
@@ -157,8 +206,8 @@ nav li {
 
 .wcontrols {
     position: relative;
-    right: -95.5%;
-    bottom: 183%;
+    left: min(918px,91%);
+    bottom: 25px;
 }
 
 p.caption {
