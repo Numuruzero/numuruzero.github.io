@@ -33,6 +33,8 @@ figcaption {
     border-image: url("../images/activewindowborder.png") 27 / 27px 27px 27px 27px / 22px 3px 3px 3px round;
     margin: 2rem 0;
     background-color: #c4c7cb;
+    min-width: 21rem;
+    max-width: 60rem;
 }
 
 .colors, .fonts, .styles {
@@ -43,13 +45,18 @@ figcaption {
     display: inline-block;
     margin: auto;
     padding: 0;
-    width: 25vw;
+    width: 32%;
     min-width: 15rem;
-    background-color: inherit;
+    background-color: transparent;
 }
 
 .caption {
-    margin-bottom: 0;
+    position: relative;
+    top: -35px;
+    left: -6px;
+    background-color: transparent;
+    font-family: "W95FA", sans-serif;
+    font-size: 12px;
 }
 
 /* .titlecolor::before {
@@ -103,8 +110,14 @@ figcaption {
     height: 10rem;
     margin: 2rem 0 2rem 5rem;
     display: table;
+    background-color: white;
     border: 10px solid transparent;
     border-image: url("../images/inactivewindowbordercontrols.png") 27 56 27 27 / 27px 56px 27px 27px / 22px 3px 3px 3px round;
+}
+
+.font p {
+    background-color: transparent;
+
 }
 
 .titlefont {
