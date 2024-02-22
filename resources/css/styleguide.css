@@ -7,14 +7,21 @@
 
 * {
     background-color: #60a8a9;
+    /* border: 1px solid black; */
 }
 
 h1 {
-    color: red;
+    color: black;
+    font-family: "W95FA",sans-serif;
+    font-size: 40px;
 }
 
 h2 {
-    background-color: inherit;
+    background-color: transparent;
+}
+
+h3 {
+    background-color: transparent;
 }
 
 figcaption {
@@ -28,6 +35,12 @@ figcaption {
     background-color: transparent;
 }
 
+nav li {
+    display: inline;
+    list-style: none;
+    margin: 0 16px;
+}
+
 .container {
     border: 10px solid transparent;
     border-image: url("../images/activewindowborder.png") 27 / 27px 27px 27px 27px / 22px 3px 3px 3px round;
@@ -35,10 +48,11 @@ figcaption {
     background-color: #c4c7cb;
     min-width: 21rem;
     max-width: 60rem;
+    display: grid;
 }
 
 .colors, .fonts, .styles {
-    background: inherit;
+    background: transparent;
 }
 
 .color-container {
@@ -48,15 +62,7 @@ figcaption {
     width: 32%;
     min-width: 15rem;
     background-color: transparent;
-}
-
-.caption {
-    position: relative;
-    top: -35px;
-    left: -6px;
-    background-color: transparent;
-    font-family: "W95FA", sans-serif;
-    font-size: 12px;
+    align-self: center;
 }
 
 /* .titlecolor::before {
@@ -68,7 +74,8 @@ figcaption {
 .color {
     width: 10rem;
     height: 10rem;
-    margin: 2rem 0 2rem 5rem;
+    margin: 2rem 25% 2rem 25%;
+    font-family: 'Courier New', Courier, monospace;
     display: table;
     border: 10px solid transparent;
     border-image: url("../images/activewindowborder.png") 27 / 27px 27px 27px 27px / 22px 3px 3px 3px round;
@@ -106,24 +113,65 @@ figcaption {
 }
 
 .font {
-    width: 10rem;
+    width: 20rem;
     height: 10rem;
-    margin: 2rem 0 2rem 5rem;
     display: table;
+    text-align: center;
     background-color: white;
     border: 10px solid transparent;
     border-image: url("../images/inactivewindowbordercontrols.png") 27 56 27 27 / 27px 56px 27px 27px / 22px 3px 3px 3px round;
 }
 
-.font p {
-    background-color: transparent;
-
+.fonts {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.titlefont {
+.font-container {
+    margin: 2rem 33%;
+    width: 32%;
+    min-width: 15rem;
+    background-color: transparent;
+}
+
+.font p {
+    background-color: transparent;
+}
+
+.bannerfont {
     font-family: 'Workbench', sans-serif;
 }
 
 .codefont {
     font-family: 'Courier New', Courier, monospace;
+}
+
+.titlefont {
+    font-family: "W95FA",sans-serif;
+}
+
+.wcontrols {
+    position: relative;
+    right: -95.5%;
+    bottom: 183%;
+}
+
+p.caption {
+    position: relative;
+    top: -36px;
+    left: -6px;
+    background-color: transparent;
+    font-family: "W95FA", sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: left;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: 700;
 }
