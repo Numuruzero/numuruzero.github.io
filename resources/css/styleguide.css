@@ -54,7 +54,7 @@ nav li {
     min-width: 21.2rem;
     max-width: 60rem;
     display: grid;
-    position: static;
+    position: relative;
 }
 
 .colors, .fonts, .styles {
@@ -205,9 +205,9 @@ nav li {
 }
 
 .wcontrols {
-    position: relative;
-    left: min(918px,91%);
-    bottom: 25px;
+    position: absolute;
+    right: -8px;
+    top: -25px;
 }
 
 p.caption {
