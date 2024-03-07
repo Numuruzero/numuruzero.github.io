@@ -1,0 +1,228 @@
+/*---- Universal Styles ----*/
+html {
+    font-size: 16px;
+}
+
+body {
+    margin: 0;
+    font-family: "Ruta", Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*---- Header Styles ----*/
+header {
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    font-family: "Cutive Mono", 'Times New Roman', Times, serif;
+    font-size: 1.3rem;
+}
+
+header img {
+    height: 100%;
+    margin-right: auto;
+}
+
+nav ul {
+    margin-right: 2rem;
+}
+
+nav li {
+    list-style: none;
+    display: inline-block;
+    opacity: 70%;
+    /* border-radius: 12px; */
+}
+
+nav li a:hover {
+    opacity: 100%;
+    transition: opacity 1s;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 1rem;
+    margin: 0 1rem;
+    background-image: linear-gradient(to left, rgb(255, 255, 255) 2%, rgb(187, 187, 187));
+    text-decoration: none;
+    color: rgb(54, 54, 54);
+    opacity: 70%;
+    transition: opacity 1s;
+}
+
+#join-us {
+    font-family: "Rubik Wet Paint", "UnifrakturMaguntia", "Rubik Microbe", "Nosifer", "Cutive Mono", 'Times New Roman', Times, serif;
+}
+
+/*---- Banner Styles ----*/
+#banner {
+    background-image: url("../images/banner2.jpg");
+    background-size: cover;
+    display: flex;
+    height: 20rem;
+    align-items: center;
+}
+
+.blurb {
+    height: 90%;
+    background-image: linear-gradient(to right, white, rgba(255, 255, 255, 0.651) 90%);
+    opacity: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.blurb h2, p {
+    margin: auto .5rem;
+}
+
+.blurb p {
+    margin-top: 1rem;
+}
+
+.box {
+    width: 100%;
+    text-align: center;
+}
+
+.quotebox {
+    display: flex;
+}
+
+.transition {
+    width: 5%;
+    padding: 2rem;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.651), black, rgba(255, 255, 255, 0.651));
+    opacity: 90%;
+}
+
+/* Below doesn't work as intended, but perhaps in the context of a flexbox it would */
+/* .quote::before {
+    content: "test";
+    display: inline-block;
+    width: 5%;
+    background-color: white;
+    position: relative;
+    left: -1rem;
+    top: 1rem;
+} */
+
+.quote {
+    display: inline-block;
+    background-image: linear-gradient(to left, white, rgba(255, 255, 255, 0.651) 90%);
+    opacity: 90%;
+    width: 100%;
+}
+
+.quote h2 {
+    margin-right: .5rem;
+}
+
+/*---- Services Styles ----*/
+#services h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.service-container {
+    display: flex;
+    color: white;
+    width: 90%;
+    transition: width 1s .1s;
+    padding: 2rem 0;
+    margin: 2rem 0;
+    align-content: center;
+    border-radius: 0 30px 2px 0;
+}
+
+.service-container:hover {
+    transition: width 1s .1s;
+    width: 99%;
+}
+
+.business.service-container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.158)),url("../images/business.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.brand.service-container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.158)),url("../images/brand.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.money.service-container {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.89), rgba(0, 0, 0, 0.158)),url("../images/money.jpg");
+    background-size: cover;
+}
+
+.service {
+    padding-bottom: 1rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+.service h3, p {
+    margin-left: 1rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+}
+
+.service p {
+    font-size: 1.1rem;
+}
+
+
+/*---- Employees Styles ----*/
+#employees {
+    display: flex;
+    flex: 1;
+}
+
+#team-header {
+    display: flex;
+    justify-content: center;
+}
+
+.employee {
+    flex: 1;
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 2rem;
+    margin: 2rem;
+    border-radius: 5px;
+}
+
+.image-container {
+    width: 100%;
+    height: 15rem;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.josh .image-container img {
+    object-fit: cover;
+    object-position: 70% 50%;
+}
+
+.kevin .image-container img {
+    object-fit: cover;
+    object-position: 70% 100%;
+}
+
+.daniel .image-container img {
+    object-fit: cover;
+    object-position: 70% 0;
+}
+
+
+/*---- Footer Styles ----*/
+footer {
+    height: 2rem;
+}
