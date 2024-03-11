@@ -44,13 +44,62 @@ nav li a {
     margin: 0 1rem;
     background-image: linear-gradient(to left, rgb(255, 255, 255) 2%, rgb(187, 187, 187));
     text-decoration: none;
-    color: rgb(54, 54, 54);
+    color: rgb(26, 26, 26);
     opacity: 70%;
     transition: opacity 1s;
+    font-weight: 800;
 }
 
 #join-us {
     font-family: "Rubik Wet Paint", "UnifrakturMaguntia", "Rubik Microbe", "Nosifer", "Cutive Mono", 'Times New Roman', Times, serif;
+    font-weight: 400;
+}
+
+/* Header <780px Styles */
+@media only screen and (max-width: 780px) {
+    header {
+        height: 10rem;
+    }
+
+    header img {
+        height: 70%;
+    }
+
+    #nav-container {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 20rem;
+        width: 20rem;
+        overflow: clip;
+    }
+
+    nav {
+        position: absolute;
+        top: 0;
+        right: -11rem;
+        transform: rotate(40deg);
+        overflow: clip;
+        z-index: 2;
+    }
+
+    nav ul {
+        margin: 0;
+        overflow: clip;
+    }
+
+    nav li {
+        display: table;
+        text-align: center;
+    }
+
+    nav li a {
+        display: table-cell;
+        margin: 0;
+        padding: .7rem 12rem;
+        overflow: hidden;
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255) 2%, rgb(187, 187, 187));
+    }
 }
 
 /*---- Banner Styles ----*/
@@ -68,6 +117,7 @@ nav li a {
     opacity: 90%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .blurb h2, p {
@@ -79,7 +129,7 @@ nav li a {
 }
 
 .box {
-    width: 100%;
+    width: 80%;
     text-align: center;
 }
 
@@ -116,10 +166,47 @@ nav li a {
     margin-right: .5rem;
 }
 
+/* Banner <540px Styles */
+@media only screen and (max-width: 780px) {
+    #banner {
+        flex-wrap: wrap;
+        height: unset;
+        min-height: 18rem;
+        overflow: clip;
+    }
+
+    .blurb {
+        background-image: linear-gradient(to bottom, white, rgba(255, 255, 255, 0.651) 90%);
+    }
+
+    .quotebox {
+        flex-wrap: wrap;
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .transition {
+        flex: 0 0 100%;
+        height: 2rem;
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.651), black, rgba(255, 255, 255, 0.651));
+    }
+
+    .quote {
+        display: flex;
+        justify-content: center;
+        background-image: linear-gradient(to top, white, rgba(255, 255, 255, 0.651) 90%);
+    }
+
+    .quote h2 {
+        width: 80%;
+    }
+}
+
 /*---- Services Styles ----*/
 #services h1 {
     font-size: 2rem;
     text-align: center;
+    margin: 3rem auto;
 }
 
 .service-container {
@@ -177,19 +264,25 @@ nav li a {
 #employees {
     display: flex;
     flex: 1;
+    width: 100%;
 }
 
 #team-header {
     display: flex;
     justify-content: center;
+    margin: 3rem auto;
+}
+
+#team-header h1 {
+    margin: 0;
 }
 
 .employee {
     flex: 1;
-    background-color: antiquewhite;
+    background-image: linear-gradient(to right, rgb(181, 181, 238), rgba(17, 21, 22, 0.096));
     text-align: center;
     padding: 2rem;
-    margin: 2rem;
+    margin: 0 2rem 2rem;
     border-radius: 5px;
 }
 
@@ -221,8 +314,65 @@ nav li a {
     object-position: 70% 0;
 }
 
+/* Employees <780px Styles */
+@media only screen and (max-width: 780px) {
+    .image-container {
+        height: 5rem;
+    }
+
+    .employee h3 {
+        margin: 0 0 .5rem;
+    }
+
+    #employees {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .employee {
+        flex: 0;
+        margin: 0 1rem 2rem;
+        height: 12rem;
+        flex-basis: 12rem;
+    }
+}
 
 /*---- Footer Styles ----*/
 footer {
-    height: 2rem;
+    display: grid;
+    height: 3rem;
+    background-color: rgb(181, 181, 238);
+    align-content: center;
+    justify-content: start;
+}
+
+footer p {
+    margin-right: 25rem;
+}
+
+footer a {
+    position: absolute;
+    text-decoration: none;
+    justify-self: center;
+    align-self: center;
+}
+
+/* Footer <670px Styles */
+@media only screen and (max-width: 670px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer p {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    footer a {
+        position: static;
+    }
+
 }
