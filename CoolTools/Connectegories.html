@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Connectegories</title>
+    <link rel="stylesheet" href="ConnCSS.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.3/Sortable.min.js"></script>
+    <script src="ConnJS.js"></script>
+  </head>
+  <body>
+    <div id="inputhelper">
+      <form action="">
+        <label for="wordinput">Today's Words:</label>
+        <input type="text" id="wordinput" name="wordinput" />
+        <input type="button" value="Submit" onclick="setWords()" />
+      </form>
+    </div>
+    <div id="allthings">
+      <div class="groupcontainer">
+        <div class="title">
+          <label for="cat1">Category 1:</label>
+          <input type="text" id="cat1" name="cat1" />
+          <img src="Hamburger.png" alt="" class="mover" />
+        </div>
+        <div class="wordgroup yellow" id="group1">
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+        </div>
+      </div>
+      <div class="groupcontainer">
+        <div class="title">
+          <label for="cat1">Category 2:</label>
+          <input type="text" id="cat2" name="cat2" />
+          <img src="Hamburger.png" alt="" class="mover" />
+        </div>
+        <div class="wordgroup green" id="group2">
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+        </div>
+      </div>
+      <div class="groupcontainer">
+        <div class="title">
+          <label for="cat1">Category 3:</label>
+          <input type="text" id="cat3" name="cat3" />
+          <img src="Hamburger.png" alt="" class="mover" />
+        </div>
+        <div class="wordgroup grey" id="group3">
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+        </div>
+      </div>
+      <div class="groupcontainer">
+        <div class="title">
+          <label for="cat1">Category 4:</label>
+          <input type="text" id="cat4" name="cat4" />
+          <img src="Hamburger.png" alt="" class="mover" />
+        </div>
+        <div class="wordgroup purple" id="group4">
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+          <div class="word"><p>Example</p></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

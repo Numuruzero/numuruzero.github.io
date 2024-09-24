@@ -1,0 +1,91 @@
+html {
+    height: 99%;
+    width: 99%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#allthings {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: 97%;
+}
+
+.groupcontainer {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.mover {
+    width: 22px;
+    display: block;
+    position: relative;
+    right: -12rem;
+    top: -22px;
+    cursor: move;
+    cursor: -webkit-grabbing;
+}
+
+.title {
+    /* display: flex; */
+    text-align: center;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    margin: 16px auto 4px;
+}
+
+.title > label {
+    display: block;
+}
+
+.title > input {
+    display: block;
+}
+
+.wordgroup {
+    display: flex;
+    justify-content: space-between;
+    width: 45rem;
+    margin-bottom: 2rem;
+}
+
+.word {
+    border: 2px solid black;
+    border-radius: 15px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 12px;
+    margin: auto 12px;
+    width: 8rem;
+    height: 4rem;
+    cursor: move;
+    cursor: -webkit-grabbing;
+}
+
+.green .word {
+    background-color: #97d13d;
+}
+
+.purple .word {
+    background-color: #c979c9;
+}
+
+.grey .word {
+    background-color: #bbbdb9;
+}
+
+.yellow .word {
+    background-color: #ebed34;
+}
+
+.highlight {
+    filter: brightness(70%);
+}
