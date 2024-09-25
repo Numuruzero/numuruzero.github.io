@@ -70,20 +70,20 @@ body {
     cursor: -webkit-grabbing;
 }
 
-.green .word {
+#allthings > div:nth-child(1) .word {
+    background-color: #ebed34;
+}
+
+#allthings > div:nth-child(2) .word {
     background-color: #97d13d;
 }
 
-.purple .word {
-    background-color: #c979c9;
-}
-
-.grey .word {
+#allthings > div:nth-child(3) .word {
     background-color: #bbbdb9;
 }
 
-.yellow .word {
-    background-color: #ebed34;
+#allthings > div:nth-child(4) .word {
+    background-color: #c979c9;
 }
 
 .highlight {
