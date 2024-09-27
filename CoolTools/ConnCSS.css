@@ -1,11 +1,11 @@
-html {
-    height: 99%;
-    width: 99%;
-}
-
 body {
     height: 100%;
     width: 100%;
+    margin: 0px;
+}
+
+#inputhelper {
+    margin-bottom: 2rem;
 }
 
 #allthings {
@@ -17,9 +17,13 @@ body {
 }
 
 .groupcontainer {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: inherit;
     justify-content: center;
     align-content: center;
+    max-width: 45rem;
+    width: 100%;
 }
 
 .mover {
@@ -51,6 +55,8 @@ body {
 .wordgroup {
     display: flex;
     justify-content: space-between;
+    max-width: 45rem;
+    width: 100%;
     width: 45rem;
     margin-bottom: 2rem;
 }
@@ -64,7 +70,8 @@ body {
     justify-content: center;
     padding: 12px 12px;
     margin: auto 12px;
-    width: 8rem;
+    max-width: 8rem;
+    width: 25%;
     height: 4rem;
     cursor: move;
     cursor: -webkit-grabbing;
@@ -88,4 +95,11 @@ body {
 
 .highlight {
     filter: brightness(70%);
+}
+
+@media only screen and (max-width: 760px) {
+    .wordgroup {
+        width: 100%;
+        margin-bottom: 1%;
+    }
 }
