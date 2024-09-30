@@ -28,20 +28,17 @@ body {
 
 .mover {
     width: 22px;
-    display: block;
     position: relative;
-    right: -12rem;
-    top: -22px;
+    left: 32px;
+    margin-left: -22px;
     cursor: move;
     cursor: -webkit-grabbing;
 }
 
 .title {
-    /* display: flex; */
+    display: grid;
     text-align: center;
-    /* flex-wrap: wrap; */
-    justify-content: center;
-    margin: 16px auto 4px;
+    margin: 16px auto 18px;
 }
 
 .title > label {
@@ -50,6 +47,10 @@ body {
 
 .title > input {
     display: block;
+}
+
+.inputgrab {
+    display: flex;
 }
 
 .wordgroup {
