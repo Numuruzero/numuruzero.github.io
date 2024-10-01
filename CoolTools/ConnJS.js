@@ -1,4 +1,5 @@
-// import Sortable from 'sortablejs/modular/sortable.complete.esm.js';
+import json from '/resources/connectegories.json';
+console.log(json);
 
 setTimeout(() => {
     const group1 = document.querySelector("#group1");
