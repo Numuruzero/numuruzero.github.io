@@ -1,5 +1,6 @@
-import json from '/resources/connectegories.json';
-console.log(json);
+fetch('https://www.nytimes.com/svc/connections/v1/2024-09-30.json')
+    .then((response) => response.json())
+    .then((json) => console.log(json));
 
 setTimeout(() => {
     const group1 = document.querySelector("#group1");
