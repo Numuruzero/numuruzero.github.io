@@ -1,4 +1,4 @@
-fetch('https://www.nytimes.com/svc/connections/v1/2024-09-30.json')
+fetch('https://raw.githubusercontent.com/Numuruzero/numuruzero.github.io/refs/heads/main/resources/connectegories.json')
     .then((response) => response.json())
     .then((json) => console.log(json));
 
